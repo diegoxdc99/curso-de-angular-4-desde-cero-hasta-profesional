@@ -132,5 +132,10 @@
       }
     }
   },
-  "defaultProject": "curso-angular4"
+  "defaultProject": "curso-angular4",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
