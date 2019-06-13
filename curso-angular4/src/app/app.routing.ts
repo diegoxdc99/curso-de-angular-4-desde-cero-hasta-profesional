@@ -6,6 +6,7 @@ import { FrutaComponent } from './components/fruta/fruta.component';
 import { EmpleadoComponent } from './components/empleado/empleado.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { CochesComponent } from './components/coches/coches.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
   {path: 'pagina-principal', component: HomeComponent},
   {path: 'contacto', component: ContactoComponent},
   {path: 'contacto/:page', component: ContactoComponent},
+  {path: 'coches', component: CochesComponent},
   {path: '**', component: HomeComponent}
 
 ]
@@ -21,4 +23,5 @@ const appRoutes: Routes = [
 export const appRoutingProvider: any[] = [];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+
 
