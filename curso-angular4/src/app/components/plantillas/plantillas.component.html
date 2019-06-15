@@ -1,0 +1,35 @@
+<h4>{{titulo}}</h4>
+<button (click)="cambiar()">Cabmiar rol</button>
+<!-- ---------------------------------- -->
+<!-- Forma clasica de hacerlo -->
+<!-- <div *ngIf="administrador">
+  <strong>Eres el administrador de la webapp</strong>
+</div>
+
+<div *ngIf="!administrador">
+  <strong>No eres el administrador de la webapp</strong>
+</div> -->
+
+<!-- ---------------------------------- -->
+
+
+<!-- Forma uno de usar las plantillas -->
+<!-- <div *ngIf="administrador; else noAdmin" >
+  <strong class="admin">Eres el administrador de la webapp</strong>
+</div>
+
+<ng-template #noAdmin >
+  <strong class="noAdmin">No eres el administrador de la webapp</strong>
+</ng-template> -->
+
+
+<!-- Forma dos de usar las plantillas -->
+<div *ngIf="administrador;  then admin else noAdmin" ></div>
+
+<ng-template #admin>
+  <strong class="admin">Eres el administrador de la webapp</strong>
+</ng-template>
+
+<ng-template #noAdmin >
+  <strong class="noAdmin">No eres el administrador de la webapp</strong>
+</ng-template>
